@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useContext, useEffect, useState } from 'react';
 import './App.css';
+import searchIcon from './img/search-interface-symbol.png'
+import { IUser, usersList } from './data/users-list';
+import { ContactsList } from './components/ContactsList';
+import { ContactsListContext } from './context/ContactsListContext';
+import { ContactsForm } from './components/ContactsForm';
 
-function App() {
+export default function App() {
+
+  const {onDataLoaded, selectedContactsCount} = useContext(ContactsListContext)
+  
+  useEffect(() => {
+    onDataLoaded(usersList)    
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ContactsForm/>
+  )
 }
-
-export default App;
