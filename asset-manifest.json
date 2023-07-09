@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/tutorial-invites/static/css/main.9d31e133.css",
+    "main.js": "/tutorial-invites/static/js/main.0c0ad0f8.js",
+    "static/media/check.png": "/tutorial-invites/static/media/check.2b1900cafb08d36389c5.png",
+    "index.html": "/tutorial-invites/index.html",
+    "main.9d31e133.css.map": "/tutorial-invites/static/css/main.9d31e133.css.map",
+    "main.0c0ad0f8.js.map": "/tutorial-invites/static/js/main.0c0ad0f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d31e133.css",
+    "static/js/main.0c0ad0f8.js"
+  ]
+}
